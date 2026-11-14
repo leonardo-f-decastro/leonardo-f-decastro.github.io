@@ -1,0 +1,27 @@
+---
+import SiteLayout from "../../layouts/SiteLayout.astro";
+---
+<SiteLayout title="Multimodal speech research — Leonardo de Castro" description="Evaluating linguistic and acoustic representations for speech-based cognitive assessment.">
+<section class="page-hero"><div class="container"><a class="back" href="/work/">← ALL PROJECTS</a><div class="eyebrow">Applied research / NLP & speech</div><h1>Multimodal speech research.</h1><p>Evaluating linguistic and acoustic representations for speech-based cognitive assessment.</p></div></section>
+<div class="container intro-line">Public-safe project overview · Details of ownership, results and client disclosures should be reviewed before final publication.</div>
+<div class="container case-layout"><article>
+<h2>Overview</h2><p>This research examines how spoken language and acoustic signals can be represented for a classification task related to cognitive impairment, and how different representations compare under a controlled evaluation protocol.</p>
+<figure class="case-figure">
+<svg viewBox="0 0 560 280" role="img" aria-label="Illustrative waveform and multimodal speech representations">
+ <rect x="29" y="31" width="502" height="222" rx="13" fill="#152438" stroke="#31465d"/>
+ <text x="53" y="58" fill="#87a6bc" font-family="monospace" font-size="10">AUDIO REPRESENTATION / RESEARCH</text>
+ <g stroke="#31475c" stroke-width="1"><path d="M52 120H509 M52 168H509 M52 216H509"/></g>
+ <g stroke="#89adfa" stroke-width="2" stroke-linecap="round">
+ <path d="M53 146V135 M67 161V119 M81 168V115 M95 151V130 M109 178V100 M123 186V93 M137 157V119 M151 161V112 M165 195V85 M179 163V113 M193 160V122 M207 195V89 M221 170V105 M235 183V93 M249 150V128 M263 171V108 M277 191V87 M291 157V120 M305 172V109 M319 155V122 M333 182V98 M347 175V106 M361 165V116 M375 194V88 M389 158V118 M403 181V94 M417 161V119 M431 175V111 M445 149V130 M459 165V111 M473 157V124 M487 160V124"/>
+ </g><path d="M53 215 C107 199 130 210 177 204 S257 217 298 198 S387 210 431 196 S470 201 507 185" fill="none" stroke="#7ee3d0" stroke-width="2" stroke-dasharray="4 5"/>
+ <text x="53" y="238" fill="#9db1c5" font-family="monospace" font-size="9">SIGNAL FEATURES + LANGUAGE FEATURES → EVALUATION</text>
+</svg>
+<figcaption>Illustrative schematic of speech and linguistic features.</figcaption></figure>
+<h2>The challenge</h2><p>Speech research is vulnerable to methodological pitfalls such as speaker overlap between training and test sets, small sample sizes, and misleading gains from overly complex representations.</p>
+<h2>Technical approach</h2><ul><li>Build linguistic and acoustic representations and compare their predictive behavior.</li><li>Include interpretable baselines such as TF–IDF with a linear classifier.</li><li>Use speaker- or participant-grouped evaluation to reduce leakage across folds.</li><li>Compare individual representations and combinations while reporting suitable classification metrics and uncertainty.</li></ul>
+<h2>The judgment behind the work</h2><p>A strong evaluation should separate the benefit of the representation from the benefit of model complexity. Careful grouped validation is critical when multiple examples can originate from the same person.</p>
+<div class="callout">Why this project is here: it illustrates a combination of modeling judgment, engineering tradeoffs, and attention to the decisions the system supports—not a claim of performance without evidence.</div>
+<h2>Evidence to add</h2><p>After review, include approved methodology, model comparison tables, limitations, and a link to the completed academic work if shareable.</p>
+<hr class="thin-rule"/><a class="ghost-link" href="/work/">← Back to all projects</a>
+</article><aside><div class="aside-panel"><h3>Project context</h3><p>Applied research / NLP & speech</p><h3>Methods &amp; technologies</h3><p>Python · NLP · Speech representations · Classification · Grouped CV</p><h3>Disclosure</h3><p>Illustrative visuals only. No proprietary client data or unverified performance figures.</p><a class="ghost-link" href="/contact/">Discuss the work ↗</a></div></aside></div>
+</SiteLayout>

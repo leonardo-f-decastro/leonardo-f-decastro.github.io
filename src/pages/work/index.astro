@@ -1,0 +1,54 @@
+---
+import SiteLayout from '../../layouts/SiteLayout.astro';
+---
+<SiteLayout title="Selected Work — Leonardo de Castro">
+<section class="page-hero"><div class="container"><span class="eyebrow">SELECTED WORK / 2026 PORTFOLIO</span><h1>Evidence, not buzzwords.</h1><p>A selection of projects spanning predictive modeling, cloud analytics, language interfaces, and applied research. Each overview is designed to explain the decisions behind the system—not just list the tools used.</p></div></section>
+<div class="container intro-line">Project summaries are public-safe descriptions. Detailed metrics, stakeholder outcomes, and ownership statements should be verified before publication.</div>
+<section class="section-tight"><div class="container"><div class="project-grid">
+
+<a class="project-card" href="/work/forecasting/"><div class="project-visual">
+<svg viewBox="0 0 560 244" role="img" aria-label="Illustrative time series chart comparing observed and forecast values">
+  <defs><linearGradient id="fc-gradient" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#6de7ce" stop-opacity=".16"/><stop offset="1" stop-color="#6de7ce" stop-opacity="0"/></linearGradient></defs>
+  <g stroke="#263c51" stroke-width="1"><path d="M35 39H535 M35 88H535 M35 137H535 M35 186H535 M35 222H535"/><path d="M35 30V222 M135 30V222 M235 30V222 M335 30V222 M435 30V222 M535 30V222" stroke-dasharray="2 7"/></g>
+  <text x="3" y="43" class="chart-label">80</text><text x="3" y="92" class="chart-label">60</text><text x="3" y="141" class="chart-label">40</text><text x="3" y="190" class="chart-label">20</text>
+  <text x="35" y="240" class="chart-label">W01</text><text x="235" y="240" class="chart-label">W06</text><text x="442" y="240" class="chart-label">W11</text>
+  <path id="chart-fill" class="chart-area" d="M35 177 L80 147 L125 170 L170 100 L215 131 L260 86 L305 114 L350 61 L395 92 L440 52 L485 77 L530 44 L530 222 L35 222 Z" fill="url(#fc-gradient)"/>
+  <path id="chart-actual" class="chart-line actual" d="M35 177 L80 147 L125 170 L170 100 L215 131 L260 86 L305 114 L350 61 L395 92 L440 52 L485 77 L530 44" />
+  <path id="chart-predict" class="chart-line predict" d="M35 169 L80 151 L125 160 L170 112 L215 135 L260 90 L305 111 L350 72 L395 87 L440 60 L485 75 L530 50"/>
+  <circle id="last-marker" cx="530" cy="44" r="4.5" fill="#8db2ff" stroke="#102034" stroke-width="3" />
+</svg>
+</div><div class="card-inner"><span class="card-category">Applied modeling · Forecasting</span><h3>Forecasting at scale</h3><p>Heterogeneous demand, statistical baselines, global ML models, ensembles, and temporal validation.</p><div class="card-footer"><span class="tags">Time Series / Ensembles / WMAPE</span><span class="card-arrow">↗</span></div></div></a>
+<a class="project-card" href="/work/decision-intelligence/"><div class="project-visual">
+<svg viewBox="0 0 560 280" role="img" aria-label="Illustrative pipeline diagram for a cloud analytics system">
+ <defs><linearGradient id="bg-ar" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#1b344a"/><stop offset="1" stop-color="#111d30"/></linearGradient></defs>
+ <rect x="28" y="33" width="504" height="213" rx="12" fill="url(#bg-ar)" stroke="#32485a"/>
+ <g stroke="#3a6d78" stroke-width="2" fill="none"><path d="M140 140H207 M349 140H418"/><path d="M193 136l9 4-9 4 M404 136l9 4-9 4"/></g>
+ <g font-family="monospace" font-size="11" text-anchor="middle"><rect x="57" y="99" width="99" height="83" rx="10" fill="#203448" stroke="#4c8093"/><text x="106" y="133" fill="#b4d6e8">RAW DATA</text><text x="106" y="150" fill="#81a8b9" font-size="9">INGESTION</text>
+ <rect x="208" y="85" width="144" height="110" rx="10" fill="#24424b" stroke="#77cfc3"/><text x="280" y="131" fill="#e6f9f4">DATA PLATFORM</text><text x="280" y="150" fill="#b4d3d7" font-size="9">MODEL + METRICS</text>
+ <rect x="418" y="99" width="95" height="83" rx="10" fill="#23384e" stroke="#6586bc"/><text x="465" y="133" fill="#c4d7f7">APPLICATION</text><text x="465" y="150" fill="#9bb2d0" font-size="9">DECISIONS</text></g>
+ <g fill="#8cb1c2" font-family="monospace" font-size="9"><text x="47" y="61">CLOUD ANALYTICS / REFERENCE ARCHITECTURE</text><text x="47" y="227">DATA QUALITY → GOVERNED METRICS → TRUSTED EXPERIENCES</text></g>
+</svg>
+</div><div class="card-inner"><span class="card-category">Data engineering · Products</span><h3>Decision intelligence systems</h3><p>Cloud data integration, trusted metrics, and operational applications designed around business decisions.</p><div class="card-footer"><span class="tags">BigQuery / Dataform / Cloud Run</span><span class="card-arrow">↗</span></div></div></a>
+<a class="project-card" href="/work/conversational-analytics/"><div class="project-visual">
+<svg viewBox="0 0 560 280" role="img" aria-label="Illustrative AI analytics application interface">
+ <rect x="39" y="26" width="482" height="231" rx="13" fill="#121f2d" stroke="#34495b"/><rect x="39" y="26" width="482" height="36" rx="13" fill="#21364c"/><path d="M39 51H521" stroke="#34495b"/>
+ <g fill="#608597"><circle cx="61" cy="44" r="4"/><circle cx="77" cy="44" r="4"/><circle cx="93" cy="44" r="4"/></g>
+ <rect x="61" y="84" width="282" height="44" rx="10" fill="#203346"/><text x="78" y="100" fill="#a7bed0" font-family="monospace" font-size="11">Which segments are trending</text><text x="78" y="114" fill="#a7bed0" font-family="monospace" font-size="11">below target?</text>
+ <rect x="191" y="142" width="303" height="89" rx="10" fill="#1e3942" stroke="#4c8f91"/><text x="211" y="164" fill="#b7eee2" font-family="monospace" font-size="11">ANALYTICS RESPONSE</text>
+ <g fill="#547e95"><rect x="211" y="178" width="105" height="7" rx="3"/><rect x="211" y="193" width="160" height="7" rx="3"/></g>
+ <rect x="389" y="174" width="13" height="35" rx="2" fill="#6bb6be"/><rect x="409" y="187" width="13" height="22" rx="2" fill="#7de0c9"/><rect x="429" y="160" width="13" height="49" rx="2" fill="#91adf0"/><rect x="449" y="181" width="13" height="28" rx="2" fill="#6bb6be"/>
+ <text x="62" y="239" fill="#7d9aab" font-family="monospace" font-size="9">RETRIEVAL · VALIDATION · GROUNDED ANSWERS</text>
+</svg>
+</div><div class="card-inner"><span class="card-category">Applied AI · Interfaces</span><h3>Conversational analytics</h3><p>Building effective interfaces between natural language, analytics workflows, and governed data.</p><div class="card-footer"><span class="tags">AI / Tool use / Evaluation</span><span class="card-arrow">↗</span></div></div></a>
+<a class="project-card" href="/work/speech-research/"><div class="project-visual">
+<svg viewBox="0 0 560 280" role="img" aria-label="Illustrative waveform and multimodal speech representations">
+ <rect x="29" y="31" width="502" height="222" rx="13" fill="#152438" stroke="#31465d"/>
+ <text x="53" y="58" fill="#87a6bc" font-family="monospace" font-size="10">AUDIO REPRESENTATION / RESEARCH</text>
+ <g stroke="#31475c" stroke-width="1"><path d="M52 120H509 M52 168H509 M52 216H509"/></g>
+ <g stroke="#89adfa" stroke-width="2" stroke-linecap="round">
+ <path d="M53 146V135 M67 161V119 M81 168V115 M95 151V130 M109 178V100 M123 186V93 M137 157V119 M151 161V112 M165 195V85 M179 163V113 M193 160V122 M207 195V89 M221 170V105 M235 183V93 M249 150V128 M263 171V108 M277 191V87 M291 157V120 M305 172V109 M319 155V122 M333 182V98 M347 175V106 M361 165V116 M375 194V88 M389 158V118 M403 181V94 M417 161V119 M431 175V111 M445 149V130 M459 165V111 M473 157V124 M487 160V124"/>
+ </g><path d="M53 215 C107 199 130 210 177 204 S257 217 298 198 S387 210 431 196 S470 201 507 185" fill="none" stroke="#7ee3d0" stroke-width="2" stroke-dasharray="4 5"/>
+ <text x="53" y="238" fill="#9db1c5" font-family="monospace" font-size="9">SIGNAL FEATURES + LANGUAGE FEATURES → EVALUATION</text>
+</svg>
+</div><div class="card-inner"><span class="card-category">Research · Multimodal learning</span><h3>Multimodal speech research</h3><p>Acoustic and linguistic representations for cognitive assessment with group-aware evaluation.</p><div class="card-footer"><span class="tags">NLP / Speech / Classification</span><span class="card-arrow">↗</span></div></div></a>
+</div></div></section></SiteLayout>

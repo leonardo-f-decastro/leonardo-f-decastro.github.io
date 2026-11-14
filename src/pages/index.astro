@@ -1,0 +1,126 @@
+---
+import SiteLayout from '../layouts/SiteLayout.astro';
+---
+<SiteLayout>
+
+<section class="hero">
+  <div class="container hero-grid">
+    <div class="hero-copy">
+      <p class="hero-name">Leonardo de Castro <span style="color:#51677e;padding:0 8px">/</span> Portfolio &amp; selected work</p>
+      <div class="eyebrow"><span class="small-dot"></span> DATA SCIENCE · APPLIED ML · AI ENGINEERING</div>
+      <h1>Science into systems.<br/><span class="accent">Systems into impact.</span></h1>
+      <p>I work across statistical modeling, machine learning, and production engineering—turning complex data problems into reliable systems that support better decisions.</p>
+      <div class="hero-actions"><a class="btn btn-primary" href="/work/">Explore selected work <span class="arrow" aria-hidden="true">↗</span></a><a class="btn btn-secondary" href="/about/">More about me <span aria-hidden="true">→</span></a></div>
+      <div class="pill-row" aria-label="Areas of expertise"><span class="pill">Forecasting &amp; Time Series</span><span class="pill">Applied Machine Learning</span><span class="pill">Cloud &amp; MLOps</span><span class="pill">AI Applications</span></div>
+    </div>
+    <div class="visual-shell" aria-label="Interactive synthetic forecasting demonstration">
+      <div class="terminal">
+        <div class="terminal-head"><span class="window-controls" aria-hidden="true"><i></i><i></i><i></i></span><span class="terminal-title mono">forecast_validation.ipynb</span><span style="color:#8aa1b4;font-size:14px" aria-hidden="true">↗</span></div>
+        <div class="chart-panel"><div class="panel-top"><div><h2>Forecast evaluation lab</h2><p>SYNTHETIC SERIES / 12 WEEKS</p></div><span class="signal-badge">● MODEL STUDY</span></div>
+        <div id="forecast-chart">
+<svg viewBox="0 0 560 244" role="img" aria-label="Illustrative time series chart comparing observed and forecast values">
+  <defs><linearGradient id="fc-gradient" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#6de7ce" stop-opacity=".16"/><stop offset="1" stop-color="#6de7ce" stop-opacity="0"/></linearGradient></defs>
+  <g stroke="#263c51" stroke-width="1"><path d="M35 39H535 M35 88H535 M35 137H535 M35 186H535 M35 222H535"/><path d="M35 30V222 M135 30V222 M235 30V222 M335 30V222 M435 30V222 M535 30V222" stroke-dasharray="2 7"/></g>
+  <text x="3" y="43" class="chart-label">80</text><text x="3" y="92" class="chart-label">60</text><text x="3" y="141" class="chart-label">40</text><text x="3" y="190" class="chart-label">20</text>
+  <text x="35" y="240" class="chart-label">W01</text><text x="235" y="240" class="chart-label">W06</text><text x="442" y="240" class="chart-label">W11</text>
+  <path id="chart-fill" class="chart-area" d="M35 177 L80 147 L125 170 L170 100 L215 131 L260 86 L305 114 L350 61 L395 92 L440 52 L485 77 L530 44 L530 222 L35 222 Z" fill="url(#fc-gradient)"/>
+  <path id="chart-actual" class="chart-line actual" d="M35 177 L80 147 L125 170 L170 100 L215 131 L260 86 L305 114 L350 61 L395 92 L440 52 L485 77 L530 44" />
+  <path id="chart-predict" class="chart-line predict" d="M35 169 L80 151 L125 160 L170 112 L215 135 L260 90 L305 111 L350 72 L395 87 L440 60 L485 75 L530 50"/>
+  <circle id="last-marker" cx="530" cy="44" r="4.5" fill="#8db2ff" stroke="#102034" stroke-width="3" />
+</svg>
+</div>
+        <div class="legend"><span><i></i>Observed demand</span><span class="forecast"><i></i>Illustrative forecast</span></div></div>
+        <div class="terminal-controls"><div class="control-label">Explore different demand patterns</div>
+          <div class="segments" role="group" aria-label="Choose a demand pattern"><button class="segment" data-pattern="seasonal" aria-pressed="true">Seasonal</button><button class="segment" data-pattern="intermittent" aria-pressed="false">Intermittent</button><button class="segment" data-pattern="trending" aria-pressed="false">Trending</button></div>
+          <div class="chart-foot"><span id="pattern-note" aria-live="polite">Recurring peaks and troughs</span><span>MODELS ≠ MAGIC</span></div>
+        </div>
+      </div><p class="hero-outnote">Interactive illustration · synthetic data only</p>
+    </div>
+  </div>
+</section>
+<section class="section" id="selected-work"><div class="container">
+  <div class="section-header reveal"><div><span class="eyebrow"><span class="section-number">01 / </span> WHAT I BUILD</span><h2 class="section-heading">Selected work<span style="color:var(--mint)">.</span></h2><p class="section-description">A mix of applied research, modeling, decision intelligence, and end-to-end engineering—where scientific thinking meets real constraints.</p></div><a class="ghost-link" href="/work/">View all work ↗</a></div>
+  <div class="project-grid">
+    <a class="project-card reveal" href="/work/forecasting/"><div class="project-visual">
+<svg viewBox="0 0 560 244" role="img" aria-label="Illustrative time series chart comparing observed and forecast values">
+  <defs><linearGradient id="card-fc-gradient" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#6de7ce" stop-opacity=".16"/><stop offset="1" stop-color="#6de7ce" stop-opacity="0"/></linearGradient></defs>
+  <g stroke="#263c51" stroke-width="1"><path d="M35 39H535 M35 88H535 M35 137H535 M35 186H535 M35 222H535"/><path d="M35 30V222 M135 30V222 M235 30V222 M335 30V222 M435 30V222 M535 30V222" stroke-dasharray="2 7"/></g>
+  <text x="3" y="43" class="chart-label">80</text><text x="3" y="92" class="chart-label">60</text><text x="3" y="141" class="chart-label">40</text><text x="3" y="190" class="chart-label">20</text>
+  <text x="35" y="240" class="chart-label">W01</text><text x="235" y="240" class="chart-label">W06</text><text x="442" y="240" class="chart-label">W11</text>
+  <path id="card-chart-fill" class="chart-area" d="M35 177 L80 147 L125 170 L170 100 L215 131 L260 86 L305 114 L350 61 L395 92 L440 52 L485 77 L530 44 L530 222 L35 222 Z" fill="url(#card-fc-gradient)"/>
+  <path id="card-chart-actual" class="chart-line actual" d="M35 177 L80 147 L125 170 L170 100 L215 131 L260 86 L305 114 L350 61 L395 92 L440 52 L485 77 L530 44" />
+  <path id="card-chart-predict" class="chart-line predict" d="M35 169 L80 151 L125 160 L170 112 L215 135 L260 90 L305 111 L350 72 L395 87 L440 60 L485 75 L530 50"/>
+  <circle id="card-last-marker" cx="530" cy="44" r="4.5" fill="#8db2ff" stroke="#102034" stroke-width="3" />
+</svg>
+</div><div class="card-inner"><span class="card-category">01 / Data science &amp; modeling</span><h3>Forecasting at scale</h3><p>Designing forecasting approaches across heterogeneous series, from statistical baselines to machine learning ensembles and rigorous temporal evaluation.</p><div class="card-footer"><span class="tags">Time Series · LightGBM · Evaluation</span><span class="card-arrow" aria-hidden="true">↗</span></div></div></a>
+    <a class="project-card reveal" href="/work/decision-intelligence/"><div class="project-visual">
+<svg viewBox="0 0 560 280" role="img" aria-label="Illustrative pipeline diagram for a cloud analytics system">
+ <defs><linearGradient id="bg-ar" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#1b344a"/><stop offset="1" stop-color="#111d30"/></linearGradient></defs>
+ <rect x="28" y="33" width="504" height="213" rx="12" fill="url(#bg-ar)" stroke="#32485a"/>
+ <g stroke="#3a6d78" stroke-width="2" fill="none"><path d="M140 140H207 M349 140H418"/><path d="M193 136l9 4-9 4 M404 136l9 4-9 4"/></g>
+ <g font-family="monospace" font-size="11" text-anchor="middle"><rect x="57" y="99" width="99" height="83" rx="10" fill="#203448" stroke="#4c8093"/><text x="106" y="133" fill="#b4d6e8">RAW DATA</text><text x="106" y="150" fill="#81a8b9" font-size="9">INGESTION</text>
+ <rect x="208" y="85" width="144" height="110" rx="10" fill="#24424b" stroke="#77cfc3"/><text x="280" y="131" fill="#e6f9f4">DATA PLATFORM</text><text x="280" y="150" fill="#b4d3d7" font-size="9">MODEL + METRICS</text>
+ <rect x="418" y="99" width="95" height="83" rx="10" fill="#23384e" stroke="#6586bc"/><text x="465" y="133" fill="#c4d7f7">APPLICATION</text><text x="465" y="150" fill="#9bb2d0" font-size="9">DECISIONS</text></g>
+ <g fill="#8cb1c2" font-family="monospace" font-size="9"><text x="47" y="61">CLOUD ANALYTICS / REFERENCE ARCHITECTURE</text><text x="47" y="227">DATA QUALITY → GOVERNED METRICS → TRUSTED EXPERIENCES</text></g>
+</svg>
+</div><div class="card-inner"><span class="card-category">02 / Cloud analytics &amp; systems</span><h3>Decision intelligence systems</h3><p>Connecting cloud pipelines, trustworthy metrics, and tailored applications to help teams act on complex operational data.</p><div class="card-footer"><span class="tags">BigQuery · Dataform · Cloud Run</span><span class="card-arrow" aria-hidden="true">↗</span></div></div></a>
+    <a class="project-card reveal" href="/work/conversational-analytics/"><div class="project-visual">
+<svg viewBox="0 0 560 280" role="img" aria-label="Illustrative AI analytics application interface">
+ <rect x="39" y="26" width="482" height="231" rx="13" fill="#121f2d" stroke="#34495b"/><rect x="39" y="26" width="482" height="36" rx="13" fill="#21364c"/><path d="M39 51H521" stroke="#34495b"/>
+ <g fill="#608597"><circle cx="61" cy="44" r="4"/><circle cx="77" cy="44" r="4"/><circle cx="93" cy="44" r="4"/></g>
+ <rect x="61" y="84" width="282" height="44" rx="10" fill="#203346"/><text x="78" y="100" fill="#a7bed0" font-family="monospace" font-size="11">Which segments are trending</text><text x="78" y="114" fill="#a7bed0" font-family="monospace" font-size="11">below target?</text>
+ <rect x="191" y="142" width="303" height="89" rx="10" fill="#1e3942" stroke="#4c8f91"/><text x="211" y="164" fill="#b7eee2" font-family="monospace" font-size="11">ANALYTICS RESPONSE</text>
+ <g fill="#547e95"><rect x="211" y="178" width="105" height="7" rx="3"/><rect x="211" y="193" width="160" height="7" rx="3"/></g>
+ <rect x="389" y="174" width="13" height="35" rx="2" fill="#6bb6be"/><rect x="409" y="187" width="13" height="22" rx="2" fill="#7de0c9"/><rect x="429" y="160" width="13" height="49" rx="2" fill="#91adf0"/><rect x="449" y="181" width="13" height="28" rx="2" fill="#6bb6be"/>
+ <text x="62" y="239" fill="#7d9aab" font-family="monospace" font-size="9">RETRIEVAL · VALIDATION · GROUNDED ANSWERS</text>
+</svg>
+</div><div class="card-inner"><span class="card-category">03 / AI engineering</span><h3>Conversational analytics</h3><p>Exploring how language interfaces, data tools, and reliable application design can make analytical questions more accessible.</p><div class="card-footer"><span class="tags">Applied AI · Retrieval · Analytics</span><span class="card-arrow" aria-hidden="true">↗</span></div></div></a>
+    <a class="project-card reveal" href="/work/speech-research/"><div class="project-visual">
+<svg viewBox="0 0 560 280" role="img" aria-label="Illustrative waveform and multimodal speech representations">
+ <rect x="29" y="31" width="502" height="222" rx="13" fill="#152438" stroke="#31465d"/>
+ <text x="53" y="58" fill="#87a6bc" font-family="monospace" font-size="10">AUDIO REPRESENTATION / RESEARCH</text>
+ <g stroke="#31475c" stroke-width="1"><path d="M52 120H509 M52 168H509 M52 216H509"/></g>
+ <g stroke="#89adfa" stroke-width="2" stroke-linecap="round">
+ <path d="M53 146V135 M67 161V119 M81 168V115 M95 151V130 M109 178V100 M123 186V93 M137 157V119 M151 161V112 M165 195V85 M179 163V113 M193 160V122 M207 195V89 M221 170V105 M235 183V93 M249 150V128 M263 171V108 M277 191V87 M291 157V120 M305 172V109 M319 155V122 M333 182V98 M347 175V106 M361 165V116 M375 194V88 M389 158V118 M403 181V94 M417 161V119 M431 175V111 M445 149V130 M459 165V111 M473 157V124 M487 160V124"/>
+ </g><path d="M53 215 C107 199 130 210 177 204 S257 217 298 198 S387 210 431 196 S470 201 507 185" fill="none" stroke="#7ee3d0" stroke-width="2" stroke-dasharray="4 5"/>
+ <text x="53" y="238" fill="#9db1c5" font-family="monospace" font-size="9">SIGNAL FEATURES + LANGUAGE FEATURES → EVALUATION</text>
+</svg>
+</div><div class="card-inner"><span class="card-category">04 / Applied research</span><h3>Multimodal speech research</h3><p>Evaluating speech and linguistic representations for cognitive assessment using careful experimental design and group-aware validation.</p><div class="card-footer"><span class="tags">NLP · Acoustic Features · ML</span><span class="card-arrow" aria-hidden="true">↗</span></div></div></a>
+  </div>
+</div></section>
+<section class="section section-border"><div class="container"><div class="section-header reveal"><div><span class="eyebrow"><span class="section-number">02 / </span> HOW I THINK</span><h2 class="section-heading">Three disciplines. One approach.</h2><p class="section-description">The best solutions are neither purely statistical nor purely engineered. They require a considered balance of all three.</p></div></div>
+<div class="approach-grid">
+  <div class="approach-card reveal"><span class="approach-num">01 — UNDERSTAND</span><div class="approach-icon">◌</div><h3>Scientific rigor</h3><p>Formulate the right question. Establish useful baselines. Evaluate with realistic validation rather than convenient metrics.</p></div>
+  <div class="approach-card reveal"><span class="approach-num">02 — BUILD</span><div class="approach-icon">⌘</div><h3>Engineering discipline</h3><p>Turn experiments into reproducible pipelines, resilient applications, and data products that teams can rely on.</p></div>
+  <div class="approach-card reveal"><span class="approach-num">03 — DELIVER</span><div class="approach-icon">↗</div><h3>Decision impact</h3><p>Keep the decision-maker in focus: usability, transparency, maintainability, and the limits of what models can claim.</p></div>
+</div></div></section>
+<section class="section section-border"><div class="container statement"><div class="reveal"><span class="eyebrow"><span class="section-number">03 / </span> PERSPECTIVE</span><h2>More than a model.<br/>A system people can use.</h2><a class="ghost-link" href="/about/">Learn about my background ↗</a></div><div class="reveal"><div class="quote-mark" aria-hidden="true">“</div><p class="feature-quote">A strong model is only the beginning. The harder work is connecting it to trustworthy data, meaningful evaluation, and a decision someone can act on.</p><p>My interests sit at the intersection of applied science and software engineering—from retail demand forecasting and operational analytics to natural-language interfaces and multimodal research.</p></div></div></section>
+<section class="section section-border"><div class="container"><div class="section-header reveal"><div><span class="eyebrow"><span class="section-number">04 / </span> RESEARCH &amp; WRITING</span><h2 class="section-heading">Ideas worth explaining.</h2><p class="section-description">Selected topics and an archive of earlier Jupyter notebook writing. New technical deep-dives will connect directly to the project work.</p></div><a class="ghost-link" href="/writing/">Browse writing ↗</a></div>
+<div class="writing-grid">
+<a href="/work/forecasting/" class="writing-card reveal"><span class="card-category">Applied methods</span><h3>Forecast validation in the real world</h3><p>How temporal backtesting, baseline comparisons, and error analysis shape forecasting decisions.</p><span class="bottom">Read project notes ↗</span></a>
+<a href="/work/speech-research/" class="writing-card reveal"><span class="card-category">Research notes</span><h3>Evaluating multimodal speech features</h3><p>Representation choice, leakage prevention, and grouped validation for speech-based classification.</p><span class="bottom">Read project notes ↗</span></a>
+<a href="https://leonardodecastro.github.io/" target="_blank" rel="noopener noreferrer" class="writing-card reveal"><span class="card-category">Notebook archive</span><h3>Earlier data science writing</h3><p>My original notebook-based technical blog remains available while I curate and migrate selected pieces.</p><span class="bottom">Open original blog ↗</span></a>
+</div></div></section>
+<div class="container cta-section"><div class="cta-panel reveal"><div><span class="eyebrow">LET'S TALK ABOUT THE HARD PROBLEMS</span><h2>Curious what we could build?</h2><p>I'm interested in thoughtful conversations about applied ML, forecasting, research, and engineering systems that deliver useful outcomes.</p></div><a class="btn btn-primary" href="/contact/">Get in touch <span aria-hidden="true">↗</span></a></div></div>
+<script is:inline>
+  (() => {
+   const patterns = {
+    seasonal:{a:[47,58,49,75,61,81,68,90,76,95,84,97],p:[50,56,52,70,60,78,69,86,79,92,85,94],note:'Recurring peaks and troughs'},
+    intermittent:{a:[0,0,24,0,0,47,0,0,18,0,55,0],p:[7,9,16,8,10,27,11,10,18,12,32,12],note:'Sparse demand and sudden spikes'},
+    trending:{a:[20,25,28,32,39,43,46,52,59,66,72,81],p:[21,24,28,34,37,42,47,53,58,64,69,78],note:'Sustained trend and model lag'}
+   };
+   const X = i => 35 + i*45; const Y = v => 220 - v*1.8;
+   const path = vals => vals.map((v,i)=>(i?'L':'M')+X(i)+' '+Y(v).toFixed(1)).join(' ');
+   document.querySelectorAll('[data-pattern]').forEach(button => button.addEventListener('click', () => {
+     const p=patterns[button.dataset.pattern]; if(!p)return;
+     document.querySelectorAll('[data-pattern]').forEach(b=>b.setAttribute('aria-pressed',String(b===button)));
+     document.querySelectorAll('#chart-actual').forEach(el=>el.setAttribute('d',path(p.a)));
+     document.querySelectorAll('#chart-predict').forEach(el=>el.setAttribute('d',path(p.p)));
+     document.querySelectorAll('#chart-fill').forEach(el=>el.setAttribute('d',path(p.a)+' L530 222 L35 222 Z'));
+     document.querySelectorAll('#last-marker').forEach(el=>{el.setAttribute('cx',String(X(11)));el.setAttribute('cy',String(Y(p.a[11])))});
+     const label=document.getElementById('pattern-note');if(label)label.textContent=p.note;
+   }));
+  })();
+</script>
+
+</SiteLayout>

@@ -1,0 +1,28 @@
+---
+import SiteLayout from "../../layouts/SiteLayout.astro";
+---
+<SiteLayout title="Forecasting at scale — Leonardo de Castro" description="Combining statistical baselines, machine learning, and temporal evaluation across heterogeneous demand patterns.">
+<section class="page-hero"><div class="container"><a class="back" href="/work/">← ALL PROJECTS</a><div class="eyebrow">Applied data science / Time series</div><h1>Forecasting at scale.</h1><p>Combining statistical baselines, machine learning, and temporal evaluation across heterogeneous demand patterns.</p></div></section>
+<div class="container intro-line">Public-safe project overview · Details of ownership, results and client disclosures should be reviewed before final publication.</div>
+<div class="container case-layout"><article>
+<h2>Overview</h2><p>This work explores how forecasting approaches can be compared, selected, and combined across thousands of retail demand series. The central challenge is heterogeneity: some series have clear seasonal structure, some are intermittent, and others shift over time.</p>
+<figure class="case-figure">
+<svg viewBox="0 0 560 244" role="img" aria-label="Illustrative time series chart comparing observed and forecast values">
+  <defs><linearGradient id="fc-gradient" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#6de7ce" stop-opacity=".16"/><stop offset="1" stop-color="#6de7ce" stop-opacity="0"/></linearGradient></defs>
+  <g stroke="#263c51" stroke-width="1"><path d="M35 39H535 M35 88H535 M35 137H535 M35 186H535 M35 222H535"/><path d="M35 30V222 M135 30V222 M235 30V222 M335 30V222 M435 30V222 M535 30V222" stroke-dasharray="2 7"/></g>
+  <text x="3" y="43" class="chart-label">80</text><text x="3" y="92" class="chart-label">60</text><text x="3" y="141" class="chart-label">40</text><text x="3" y="190" class="chart-label">20</text>
+  <text x="35" y="240" class="chart-label">W01</text><text x="235" y="240" class="chart-label">W06</text><text x="442" y="240" class="chart-label">W11</text>
+  <path id="chart-fill" class="chart-area" d="M35 177 L80 147 L125 170 L170 100 L215 131 L260 86 L305 114 L350 61 L395 92 L440 52 L485 77 L530 44 L530 222 L35 222 Z" fill="url(#fc-gradient)"/>
+  <path id="chart-actual" class="chart-line actual" d="M35 177 L80 147 L125 170 L170 100 L215 131 L260 86 L305 114 L350 61 L395 92 L440 52 L485 77 L530 44" />
+  <path id="chart-predict" class="chart-line predict" d="M35 169 L80 151 L125 160 L170 112 L215 135 L260 90 L305 111 L350 72 L395 87 L440 60 L485 75 L530 50"/>
+  <circle id="last-marker" cx="530" cy="44" r="4.5" fill="#8db2ff" stroke="#102034" stroke-width="3" />
+</svg>
+<figcaption>Illustrative synthetic series, not actual project data.</figcaption></figure>
+<h2>The challenge</h2><p>In retail, forecast quality affects decisions about stock, operations, and planning. A single algorithm may not perform well across every demand pattern. Evaluation must also respect time ordering: random splits can create an unrealistically optimistic view of accuracy.</p>
+<h2>Technical approach</h2><ul><li>Establish interpretable statistical baselines, including classical time-series methods and intermittent-demand approaches.</li><li>Compare global ML methods, including gradient-boosted trees, with local statistical models and ensemble strategies.</li><li>Use rolling or backtesting windows and evaluate errors using business-relevant forecasting metrics such as WMAPE.</li><li>Study performance by demand pattern, rather than relying solely on a single global score.</li></ul>
+<h2>The judgment behind the work</h2><p>The key scientific decision is not simply which model wins a leaderboard. It is how to choose a model family under different data conditions, control temporal leakage, and balance complexity against maintainability.</p>
+<div class="callout">Why this project is here: it illustrates a combination of modeling judgment, engineering tradeoffs, and attention to the decisions the system supports—not a claim of performance without evidence.</div>
+<h2>Evidence to add</h2><p>A future revision can include approved baseline comparisons, error distributions, series-segment breakdowns, and a reproducible synthetic demonstration.</p>
+<hr class="thin-rule"/><a class="ghost-link" href="/work/">← Back to all projects</a>
+</article><aside><div class="aside-panel"><h3>Project context</h3><p>Applied data science / Time series</p><h3>Methods &amp; technologies</h3><p>Python · LightGBM · Statistical forecasting · Ensembles · Backtesting</p><h3>Disclosure</h3><p>Illustrative visuals only. No proprietary client data or unverified performance figures.</p><a class="ghost-link" href="/contact/">Discuss the work ↗</a></div></aside></div>
+</SiteLayout>

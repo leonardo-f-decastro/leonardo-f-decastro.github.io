@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://leonardo-f-decastro.github.io/sitemap.xml
